@@ -4,5 +4,10 @@ public class Game {
 
         diceRoller.roll();
         diceRoller.printRoll();
+
+        CommandParser commandParser = new CommandParser();
+
+        commandParser.readLine();
+        commandParser.desicion();
     }
 }
