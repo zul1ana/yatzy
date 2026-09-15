@@ -20,7 +20,6 @@ public class DiceRoller {
 
     public void printRoll() {
         int n = 1;
-        System.out.println("hsllå?");
         
         for (Dice dice : dices.keySet()) {
             System.out.println("Dice " + n + ": " + dice.getValue());
