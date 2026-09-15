@@ -1,11 +1,10 @@
 import java.util.HashMap;
 
 public class DiceRoller {
-
-    private final HashMap<Dice, Boolean> dices = new HashMap<>(5);
+    private final HashMap<Dice, Boolean> dices = new HashMap<>();
 
     public DiceRoller() {
-        for (int i = 0; i <= this.dices.size(); i++) {
+        for (int i = 0; i <= 5; i++) {
             Dice dice = new Dice();
             dices.put(dice, true);
         }
@@ -19,9 +18,10 @@ public class DiceRoller {
         }
     }
 
-    private void printRoll() {
+    public void printRoll() {
         int n = 1;
-
+        System.out.println("hsllå?");
+        
         for (Dice dice : dices.keySet()) {
             System.out.println("Dice " + n + ": " + dice.getValue());
             n++;
